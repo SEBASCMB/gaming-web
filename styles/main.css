@@ -3,16 +3,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #000000;
+  color: white;
 }
 
-.container {
-	font-family: Arial, Helvetica, sans-serif;
-	color: white;
-	display: flex;
-	align-content: center;
-	flex-direction: column;
-	position: relative;
-}
+
 
 header {
 	position: absolute;
