@@ -237,7 +237,7 @@ header {
 
 .info-cards {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: auto auto;
 	gap: 10px;
 	width: 100%;
 	height: 100%;
@@ -246,7 +246,7 @@ header {
 
 .card {
 	position: relative;
-	width: 90%;
+	width: auto;
 	height: 40vh;
 	
 	overflow: hidden;
@@ -305,16 +305,24 @@ header {
 	opacity: .7;
 }
 
+.card:hover {
+  box-shadow 0 0 15px rgb(211,211,211);
+}
 
+.card:nth-child(1) {
+  grid-column: span 2;
+}
+
+.card:nth-child(2) {
+  grid-row: span 2;
+  height: 83vh;
+}
 
 #info-title{
-	text-align: center;
-	
-	
+	text-align: center;	
 }
 
 #info-desc{
 	text-align: center;
 	margin: 0 auto;
-
 }
